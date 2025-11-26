@@ -1,7 +1,7 @@
 
 import './Card.css'
 import { useState } from 'react';
-import giftUrl from './assets/gift.jpg'
+
 
 function DayCircle(day: number) {
   return (
@@ -46,7 +46,6 @@ function Card(day: number, text: string) {
         <>
           <div className="card gift">
             {dayCircle}
-            <div><button onClick={() => doOpen(true)}>Ouvre-moi !</button></div>
           </div>
         </>
       )
