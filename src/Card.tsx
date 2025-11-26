@@ -13,10 +13,8 @@ function DayCircle(day: number) {
 
 function Card(day: number, text: string) {
   const date = new Date();
-  let dev = false;
   let currentDay = date.getDate()
   if (import.meta.env.DEV) {
-    dev = true;
     currentDay = 10;
   }
   const dayCircle = DayCircle(day)
