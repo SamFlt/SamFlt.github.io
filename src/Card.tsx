@@ -21,12 +21,12 @@ function Card(day: number, text: string) {
   }
   const dayCircle = DayCircle(day)
   const canBeOpened = dev || (date.getMonth() == 12 && currentDay >= day)
-  if (day < currentDay) {
+  if (currentDay < day) {
     return (
       <>
         <div className="card">
           {dayCircle}
-          <div>{canBeOpened ? text : "Nope"}</div>
+          The actual content
         </div>
         
       </>
@@ -57,7 +57,6 @@ function Card(day: number, text: string) {
         <div className="card gift">
           {dayCircle}
         </div>
-
       </>
     )
   }
