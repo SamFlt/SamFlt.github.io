@@ -1,16 +1,15 @@
+@use 'sass:math';
 $d: 70;      // density
 $w: 1200;     // grid size
-$s: 5s;       // speed
-
+$s: 5s; // speed
 // Generate the snow image using radial gradients
 $grad: ();
 @for $i from 0 to $d {
-  $v: random(4) + 2;
-  $a: random(5) * .1 + .5;
+  $v: math.random(4) + 2;
+    $a: math.random(5) * .1 + .5;
   $grad: $grad, radial-gradient(
       $v+px $v+px at
-      (random($w - $v * 2) + $v)+px
-      (random($w - $v * 2) + $v)+px, 
+      (math.random($w - $v * 2) + $v)+px (math.random($w - $v * 2) + $v)+px,
       rgba(255,255,255,$a) 50%,
       rgba(0,0,0,0)
   ) !global;
@@ -39,7 +38,7 @@ html {
   content: "";
 }
 .snow:after {
-  margin-left: -$w/3 + px;
+  margin-left: calc(-1 * $w / 3) + px;
   opacity: .4;
   animation-duration: $s*2;
   animation-direction: reverse;
@@ -48,7 +47,7 @@ html {
 .snow:before {
   animation-duration: $s*3;
   animation-direction: reverse;
-  margin-left: -$w/2 + px;
+  margin-left: calc(-1 * $w / 2) + px;
   opacity: .65;
   filter: blur(1.5px);
 }
