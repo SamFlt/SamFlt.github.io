@@ -13,8 +13,12 @@ function DayCircle(day: number) {
 
 function Card(day: number, text: string) {
   const date = new Date();
-  const dev = true;
-  const currentDay = date.getDate()
+  let dev = false;
+  let currentDay = date.getDate()
+  if (import.meta.env.MODE) {
+    dev = true;
+    currentDay = 10;
+  }
   const dayCircle = DayCircle(day)
   const canBeOpened = dev || (date.getMonth() == 12 && currentDay >= day)
   if (day < currentDay) {
@@ -40,11 +44,10 @@ function Card(day: number, text: string) {
     } else {
       return (
         <>
-          <div className="card">
+          <div className="card gift">
             {dayCircle}
-            <div>{canBeOpened ? text : "Nope"}</div>
+            <div><button onClick={() => doOpen(true)}>Ouvre-moi !</button></div>
           </div>
-
         </>
       )
     }
@@ -52,13 +55,10 @@ function Card(day: number, text: string) {
   } else {
     return (
       <>
-        <div className="card">
-          <div className='img-wrapper'>
-          <div className='img-overlay'></div>
-          <img src={giftUrl}></img>
-          </div>
+        <div className="card gift">
+          {dayCircle}
         </div>
-        
+
       </>
     )
   }
