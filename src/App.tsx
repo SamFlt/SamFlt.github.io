@@ -1,5 +1,6 @@
 import './App.css'
 import Card from './Card'
+import christmasTreeUrl from './assets/christmas-tree.webp'
 
 function ThreadLine(day: number) {
   const date = new Date();
@@ -33,13 +34,16 @@ function App() {
   for(let i = 1; i < 25; ++i) {
     elements.push(Card(i, "A poem"))
     elements.push(ThreadLine(i))
-    
   }
   return (
     <>
       <div className='snow'>
       </div>
       {elements}
+
+      <div>
+        <img src={christmasTreeUrl}></img>
+      </div>
 
     </>
   )
