@@ -32,7 +32,7 @@ function App() {
 
   let elements = []
   for(let i = 1; i < 25; ++i) {
-    elements.push(Card(i, "A poem"))
+    elements.push(Card(i))
     elements.push(ThreadLine(i))
   }
   return (
@@ -41,7 +41,7 @@ function App() {
       </div>
       {elements}
 
-      <div>
+      <div id="sapin">
         <img src={christmasTreeUrl}></img>
       </div>
 

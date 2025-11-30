@@ -1,7 +1,7 @@
 
 import './Card.css'
 import { useState } from 'react';
-
+import {getDay} from './Content'
 
 function DayCircle(day: number) {
   return (
@@ -11,22 +11,22 @@ function DayCircle(day: number) {
   )
 }
 
-function Card(day: number, text: string) {
+function Card(day: number) {
   const date = new Date();
   let currentDay = date.getDate()
   if (import.meta.env.DEV) {
-    currentDay = 10;
+    currentDay = 1;
+    date.setMonth(11)
   }
   const dayCircle = DayCircle(day)
-
-  if (currentDay < day) {
+  let content = getDay(currentDay)
+  
+  if (currentDay < day || date.getMonth() != 11) {
     return (
       <>
-        <div className="card">
+        <div className="card gift soon">
           {dayCircle}
-          {text}
-        </div>
-        
+        </div>        
       </>
     )
   } else if (day == currentDay) {
@@ -36,14 +36,22 @@ function Card(day: number, text: string) {
       return (<>
         <div className="card gift">
           {dayCircle}
-          <div><button onClick={() => doOpen(true)}>Ouvre-moi !</button></div>
+          <div className='contentWrapper'>
+            <div><button onClick={() => doOpen(true)}>Ouvre-moi !</button></div>
+            <div className='content'></div>
+          </div>
         </div>
       </>)
     } else {
+
       return (
         <>
-          <div className="card gift">
+          <div className="card opened">
             {dayCircle}
+            <div className="content">
+              {content}
+
+            </div>
           </div>
         </>
       )
@@ -52,8 +60,12 @@ function Card(day: number, text: string) {
   } else {
     return (
       <>
-        <div className="card gift">
+        <div className="card  passed">
           {dayCircle}
+           <div className="content">
+              {content}
+
+            </div>
         </div>
       </>
     )
