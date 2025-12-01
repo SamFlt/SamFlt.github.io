@@ -59,7 +59,7 @@ function Card({ day }: { day: number }) {
   } else {
     return (
       <>
-        <div className="card  passed">
+        <div className="card opened passed">
           {dayCircle}
            <div className="content">
             {content}
