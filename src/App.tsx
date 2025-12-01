@@ -4,11 +4,26 @@ import christmasTreeUrl from './assets/christmas-tree.webp'
 
 import { useState, useEffect } from "react";
 
+
+function diff(d1: Date, d2: Date) {
+  return { days, hours, minutes, seconds };
+}
+
 function diffStr(t: number) {
   let diff = t - new Date().getTime()
-  let diffT = new Date()
-  diffT.setTime(diff)
-  return diffT.getHours() + "h" + diffT.getMinutes() + "m" + diffT.getSeconds()
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  diff -= days * (1000 * 60 * 60 * 24);
+
+  const hours = Math.floor(diff / (1000 * 60 * 60));
+  diff -= hours * (1000 * 60 * 60);
+
+  const minutes = Math.floor(diff / (1000 * 60));
+  diff -= minutes * (1000 * 60);
+
+  const seconds = Math.floor(diff / 1000);
+// const diffDay  = Math.round(diffMs / (1000 * 60 * 60 * 24));
+  return hours + "h" + minutes + "m" + seconds + "s"
 }
 
 function Timer({ targetDate }: { targetDate: Date }) {
@@ -33,10 +48,9 @@ function Timer({ targetDate }: { targetDate: Date }) {
 function ThreadLine({ day }: { day: number }) {  
   const date: Date = new Date();
   const dateNextDay: Date = new Date()
-  dateNextDay.setDate(date.getDate() + 1)
-  dateNextDay.setHours(8)
-  dateNextDay.setMinutes(0)
-  dateNextDay.setSeconds(0)
+  dateNextDay.setDate(day + 1)
+  dateNextDay.setHours(0, 0, 0, 0)
+
   
   const currentDay = date.getDate()
   if(day == 24) {
