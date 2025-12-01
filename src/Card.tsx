@@ -19,7 +19,7 @@ function Card({ day }: { day: number }) {
     date.setMonth(11)
   }
   const dayCircle = DayCircle(day)
-  let content = getDay(currentDay)
+  let content = getDay(day)
   
   if (currentDay < day || date.getMonth() != 11) {
     return (
@@ -50,7 +50,6 @@ function Card({ day }: { day: number }) {
             {dayCircle}
             <div className="content">
               {content}
-
             </div>
           </div>
         </>
@@ -63,8 +62,7 @@ function Card({ day }: { day: number }) {
         <div className="card  passed">
           {dayCircle}
            <div className="content">
-              {content}
-
+            {content}
             </div>
         </div>
       </>
