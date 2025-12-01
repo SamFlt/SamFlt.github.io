@@ -1,4 +1,6 @@
 import minibiteUrl from './assets/minibite.jpg'
+import penseeNoireUrl from './assets/pensee_noire.png'
+
 const days: Record<number, Function> = {
     1: () => {
         return (<>
@@ -12,8 +14,20 @@ const days: Record<number, Function> = {
                 Pour ce premier jour, je te laisse admirer la première fois où tu m'as fait rire
             </p>
             <img src={minibiteUrl}/>
-        </>)   
+        </>)
+    },
+    2: () => {
+        return (<>
+            <img src={penseeNoireUrl} />
+            <p>
+                Première photo d'une pensée<br />
+                Avant le premier pas qui t'a fait avancé <br />
+                Vers l'endroit où nos regards ont dansé
+            </p>
+
+        </>)
     }
+
 }
 
 
