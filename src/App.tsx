@@ -5,10 +5,6 @@ import christmasTreeUrl from './assets/christmas-tree.webp'
 import { useState, useEffect } from "react";
 
 
-function diff(d1: Date, d2: Date) {
-  return { days, hours, minutes, seconds };
-}
-
 function diffStr(t: number) {
   let diff = t - new Date().getTime()
 
@@ -22,7 +18,6 @@ function diffStr(t: number) {
   diff -= minutes * (1000 * 60);
 
   const seconds = Math.floor(diff / 1000);
-// const diffDay  = Math.round(diffMs / (1000 * 60 * 60 * 24));
   return hours + "h" + minutes + "m" + seconds + "s"
 }
 
@@ -61,8 +56,6 @@ function ThreadLine({ day }: { day: number }) {
   if(day < currentDay) {
     return(<>
       <div className="threadLine full"></div>
-      <div className="threadLine full"></div>
-      
     </>)
   }
   if(currentDay == day) {
@@ -79,9 +72,7 @@ function ThreadLine({ day }: { day: number }) {
     </>)
   } else if (day > currentDay) {
     return (<>
-      <div className="threadLine full"></div>
-      <div className="threadLine full"></div>
-         
+      <div className="threadLine full"></div>         
     </>)
   }
 }
