@@ -11,7 +11,7 @@ function DayCircle(day: number) {
   )
 }
 
-function Card(day: number) {
+function Card({ day }: { day: number }) {  
   const date = new Date();
   let currentDay = date.getDate()
   if (import.meta.env.DEV) {
