@@ -33,29 +33,7 @@ const days: Record<number, Function> = {
     3: () => {
         return (<>
             <img src={bateauIvreUrl} />
-            <p>
-                Première escale, premier port <br />
-                Stress dans la cale et incertitude à la <em>bar</em> <br />
-                Quand une voile noire à tribord <br />
-                Est arrivée avec un remou de retard <br />
-                <br />
-                Papillon de lumière à un enterrement <br />
-                Ma mère est restée pure, mon regard absorbé entièrement<br />
-                <br />
-                Dans mon dos le vif de tes serres <br />
-                Sur un bateau ivre j'ai rencontré une sirène <br />
-                Sous la tempête ai posé mon pied à terre <br />
-                Se sont ecartées les brumes de mes peines <br />
-                <br />
-                On a navigué sous la pluie <br />
-                Jusqu'à retrouver ton rocher lapis lazuli <br />
-                À ce moment nos regards se sont embrasées <br />
-                Et nos doutes se turent <br />
-                On à repris la mer quand on s'est embrassé <br />
-            </p>
-            <p>
-                <strong>KISS COUNT: (+) 1</strong>
-            </p>
+
 
         </>)
     },
