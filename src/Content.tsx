@@ -1,6 +1,8 @@
 import minibiteUrl from './assets/minibite.jpg'
 import penseeNoireUrl from './assets/pensee_noire.png'
 import bateauIvreUrl from './assets/bateau_ivre.jpg'
+import pigeonUrl from './assets/pigeon.jpg'
+
 
 const days: Record<number, Function> = {
     1: () => {
@@ -46,15 +48,21 @@ const days: Record<number, Function> = {
                 Se sont ecartées les brumes de mes peines <br />
                 <br />
                 On a navigué sous la pluie <br />
-                Jusqu'a retrouver ton rocher lapis lazuli <br />
+                Jusqu'à retrouver ton rocher lapis lazuli <br />
                 À ce moment nos regards se sont embrasées <br />
-                À nos doutes se turent <br />
-                On a repris la mer quand on s'est embrassé <br />
+                Et nos doutes se turent <br />
+                On à repris la mer quand on s'est embrassé <br />
             </p>
             <p>
                 <strong>KISS COUNT: (+) 1</strong>
             </p>
 
+        </>)
+    },
+    4: () => {
+        return (<>
+            <img src={pigeonUrl} />
+            <p>Me suis fait chier dessus</p>
         </>)
     }
 
