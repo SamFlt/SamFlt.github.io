@@ -35,7 +35,7 @@ const days: Record<number, Function> = {
                 Première escale, premier port <br />
                 Stress dans la cale et incertitude à la <em>bar</em> <br />
                 Quand une voile noire à tribord <br />
-                Est arrivée avec un remous de retard <br />
+                Est arrivée avec un remou de retard <br />
                 <br />
                 Papillon de lumière à un enterrement <br />
                 Ma mère est restée pure, mon regard absorbé entièrement<br />
