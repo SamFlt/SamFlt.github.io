@@ -2,7 +2,7 @@ import minibiteUrl from './assets/minibite.jpg'
 import penseeNoireUrl from './assets/pensee_noire.png'
 import bateauIvreUrl from './assets/bateau_ivre.jpg'
 import pigeonUrl from './assets/pigeon.jpg'
-
+import motUrl from './assets/mot.png'
 
 const days: Record<number, Function> = {
     1: () => {
@@ -41,6 +41,14 @@ const days: Record<number, Function> = {
         return (<>
             <img src={pigeonUrl} />
             <p>Me suis fait chier dessus</p>
+        </>)
+    },
+    5: () => {
+        return (<>
+            <img src={motUrl} />
+            <p>25/07/2025</p>
+            <p>❤️</p>
+            
         </>)
     }
 
