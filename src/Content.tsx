@@ -71,7 +71,20 @@ const days: Record<number, Function> = {
 
             </div>
         </>)
-    }
+    },
+    7: () => {
+        
+        return (<>
+            <iframe width="315" height="560"
+                src="https://www.youtube.com/embed/D6Pkb0LSKG0?si=RfoXNNOazUOWRjFt"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+        </>)
+    },
+    
 
 }
 
