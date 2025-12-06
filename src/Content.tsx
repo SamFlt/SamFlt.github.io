@@ -58,9 +58,6 @@ const days: Record<number, Function> = {
     },
     6: () => {
         let [isOpenened, doOpen] = useState(false)
-        let s = {
-            "width": "100%"
-        }
         let ending = isOpenened ? <img className="imgVino" src={vinUrl} /> : <div><button onClick={() => doOpen(true)}>Veritas?</button></div>
 
         return (<>
