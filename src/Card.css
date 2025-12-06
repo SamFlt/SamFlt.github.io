@@ -78,3 +78,15 @@
 }
 
 .img-wrapper img {width: 100%;}
+
+
+.card .imgVinoScreen {
+  width: 50vw !important;
+  height:auto;
+  max-height: none;
+}
+.card .imgVino {
+  width: 50vw !important;
+  height: auto !important;
+  max-height: none;
+}

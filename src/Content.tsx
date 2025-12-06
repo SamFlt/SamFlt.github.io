@@ -3,6 +3,11 @@ import penseeNoireUrl from './assets/pensee_noire.png'
 import bateauIvreUrl from './assets/bateau_ivre.jpg'
 import pigeonUrl from './assets/pigeon.jpg'
 import motUrl from './assets/mot.png'
+import vinScreenUrl from './assets/vin_conv.jpg'
+import vinUrl from './assets/vino.jpg'
+import './Card.css'
+
+import { useState } from 'react'
 
 const days: Record<number, Function> = {
     1: () => {
@@ -49,6 +54,25 @@ const days: Record<number, Function> = {
             <p>25/07/2025</p>
             <p>❤️</p>
             
+        </>)
+    },
+    6: () => {
+        let [isOpenened, doOpen] = useState(false)
+        let s = {
+            "width": "100%"
+        }
+        let ending = isOpenened ? <img className="imgVino" src={vinUrl} /> : <div><button onClick={() => doOpen(true)}>Veritas?</button></div>
+
+        return (<>
+            <p>In vino:</p>
+            <div>
+                <img className="imgVinoScreen" src={vinScreenUrl} />
+                
+            </div>
+            <div>
+            {ending}
+
+            </div>
         </>)
     }
 
