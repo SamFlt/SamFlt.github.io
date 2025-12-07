@@ -6,6 +6,7 @@ import motUrl from './assets/mot.png'
 import vinScreenUrl from './assets/vin_conv.jpg'
 import vinUrl from './assets/vino.jpg'
 import itTakesTwoUrl from './assets/it_takes_two.jpg'
+import salopetteUrl from './assets/salopette.jpg'
 
 import './Card.css'
 
@@ -91,10 +92,15 @@ const days: Record<number, Function> = {
             <img src={itTakesTwoUrl} />
             <div>J'adore jouer avec toi !!!</div>
             <div>C'est quand qu'on finit ? 😍</div>
-            
         </>)
     },
-    
+    9:  () => {
+        return (<>
+            <img src={salopetteUrl} />
+            <div>Fuck Mondial Relay</div>
+            <div>It's Salopette day</div>
+        </>)
+    }
 
 }
 
