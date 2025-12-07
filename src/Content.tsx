@@ -5,6 +5,8 @@ import pigeonUrl from './assets/pigeon.jpg'
 import motUrl from './assets/mot.png'
 import vinScreenUrl from './assets/vin_conv.jpg'
 import vinUrl from './assets/vino.jpg'
+import itTakesTwoUrl from './assets/it_takes_two.jpg'
+
 import './Card.css'
 
 import { useState } from 'react'
@@ -82,6 +84,14 @@ const days: Record<number, Function> = {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen></iframe>
 
+        </>)
+    },
+    8:  () => {
+        return (<>
+            <img src={itTakesTwoUrl} />
+            <div>J'adore jouer avec toi !!!</div>
+            <div>C'est quand qu'on finit ? 😍</div>
+            
         </>)
     },
     
