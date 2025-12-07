@@ -78,9 +78,9 @@ const days: Record<number, Function> = {
             <iframe width="315" height="560"
                 src="https://www.youtube.com/embed/D6Pkb0LSKG0?si=RfoXNNOazUOWRjFt"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                allowFullScreen></iframe>
 
         </>)
     },
