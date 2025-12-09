@@ -101,7 +101,28 @@ const days: Record<number, Function> = {
             <div>It's Salopette day</div>
             <div>46 ??? 😭😭😭</div>
         </>)
-    }
+    },
+    10: () => {
+        let s = { "borderRadius": "12px" };
+        let embedFdp = <iframe data-testid="embed-iframe" style={s}
+            src="https://open.spotify.com/embed/track/5kdiMtCPO4pZavJcDgBthn?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen={false} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        let embedBatard = <iframe data-testid="embed-iframe" style={s}
+         src="https://open.spotify.com/embed/track/06cUnmAwNiDWW1NmxsizhF?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen={false} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        return (<>
+            <p>Aujourd'hui, que des numéros 10 dans ma team</p>
+            <p>Je te laisse avec deux musiques qui ont marqué le temps que j'ai passé avec toi</p>
+            <br></br>
+            <br></br>
+            <br></br>
+            <h1>🚙</h1>
+            {embedFdp}
+            <br></br>
+            <br></br>
+            <br></br>
+            <h1>🎤</h1>
+            {embedBatard}
+        </>)
+        }
 
 }
 
