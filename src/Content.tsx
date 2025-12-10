@@ -7,6 +7,7 @@ import vinScreenUrl from './assets/vin_conv.jpg'
 import vinUrl from './assets/vino.jpg'
 import itTakesTwoUrl from './assets/it_takes_two.jpg'
 import salopetteUrl from './assets/salopette.jpg'
+import aventurineUrl from './assets/aventurine.jpeg'
 
 import './Card.css'
 
@@ -122,7 +123,42 @@ const days: Record<number, Function> = {
             <h1>🎤</h1>
             {embedBatard}
         </>)
-        }
+    },
+    11: () => {
+        return (<>
+            <p>
+                Ce week-end, de câlins je vais te choyer <br></br>
+                Cette soirée, passons là enmurés<br></br>
+                Je veux voir tes yeux chatoyer <br></br>
+                Et n'entendre que des mots doux murmurés <br></br>
+                Je ferai tout pour que ton stress se disperse <br></br>
+                Car de ton regarde mon âme tu transperces <br></br>
+            </p>
+
+            <p>
+                J'espère que ce menhir ne rend pas fécond<br></br>
+                Car contrairement à César<br></br>
+                Je veux me noyer dans ton Rubis con<br></br>
+                Ma jolie dame des arts<br></br>
+            </p>
+
+            <p>
+                Je me sens comme une fraude : titillante et impolie<br></br>
+                Devant une émeraude si brillante et polie<br></br>
+                De ma grotte tu m'as sorti<br></br>
+                Malgré toutes mes strates de roche <br></br>
+                Donc fouille et excave mes poches <br></br>
+                Pour qu'on se rapproche, qu'on soit assorti <br></br>
+            </p>
+
+            <p></p>
+
+
+
+            <img src={aventurineUrl} />
+        </>)
+    },
+
 
 }
 
