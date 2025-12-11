@@ -8,6 +8,10 @@ import vinUrl from './assets/vino.jpg'
 import itTakesTwoUrl from './assets/it_takes_two.jpg'
 import salopetteUrl from './assets/salopette.jpg'
 import aventurineUrl from './assets/aventurine.jpeg'
+import constellationUrl from './assets/constellation.jpg'
+import pleaseUrl from './assets/please.png'
+import tarotUrl from './assets/tarot.jpg'
+
 
 import './Card.css'
 
@@ -152,12 +156,25 @@ const days: Record<number, Function> = {
             </p>
 
             <p></p>
-
-
-
             <img src={aventurineUrl} />
         </>)
     },
+    12: () => {
+        return (<>
+            <img src={constellationUrl} />
+            <div>J'ai adoré la nuit des étoiles avec toi et tes potes</div>
+            <div>J'ai aimé notre sortie planétarium</div>
+            <br></br>
+            <div>On retourne voir les étoiles quand il fait beau ? </div>
+            <img src={pleaseUrl} />
+        </>)
+    },
+    13: () => {
+        return (<>
+            <div>Tu me tires les cartes bientôt ? ✨✨✨</div>
+            <img src={tarotUrl} />
+        </>)
+    }
 
 
 }
