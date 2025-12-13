@@ -11,6 +11,7 @@ import aventurineUrl from './assets/aventurine.jpeg'
 import constellationUrl from './assets/constellation.jpg'
 import pleaseUrl from './assets/please.png'
 import tarotUrl from './assets/tarot.jpg'
+import acabUrl from './assets/acab.jpg'
 
 
 import './Card.css'
@@ -170,6 +171,12 @@ const days: Record<number, Function> = {
         </>)
     },
     13: () => {
+        return (<>
+            <img src={acabUrl} />
+            <div>Joyeux ACAB day !!!</div>
+        </>)
+    },
+    14: () => {
         return (<>
             <div>Tu me tires les cartes bientôt ? ✨✨✨</div>
             <img src={tarotUrl} />
