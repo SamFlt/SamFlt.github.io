@@ -10,7 +10,7 @@ import salopetteUrl from './assets/salopette.jpg'
 import aventurineUrl from './assets/aventurine.jpeg'
 import constellationUrl from './assets/constellation.jpg'
 import pleaseUrl from './assets/please.png'
-import tarotUrl from './assets/tarot.jpg'
+import tarotUrl from './assets/tarot.png'
 import acabUrl from './assets/acab.jpg'
 
 
