@@ -185,11 +185,20 @@ const days: Record<number, Function> = {
     15: () => {
         return (<>
             <img src={margotUrl} />
-            <div>Elle ? C'est juste Margot</div>
+            <div>Elle ? C'est juste Margaux</div>
             <div>Pourquoi elle fait cette là ?</div>
             <div>Elle vient juste de me voir (ou de voir un homme je sais pas)</div>
         </>)
     },
+    16: () => {
+        return (<>
+            <div>Aujourd'hui pas besoin de mots, juste que tu mettes un casque</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GOKN3hh6mGE?si=dADNJfE4z0Of00hG" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+
+        </>)
+    }
     
 
 
