@@ -12,7 +12,7 @@ import constellationUrl from './assets/constellation.jpg'
 import pleaseUrl from './assets/please.png'
 import tarotUrl from './assets/tarot.png'
 import acabUrl from './assets/acab.jpg'
-
+import margotUrl from './assets/margot.webp'
 
 import './Card.css'
 
@@ -181,7 +181,16 @@ const days: Record<number, Function> = {
             <div>Tu me tires les cartes bientôt ? ✨✨✨</div>
             <img src={tarotUrl} />
         </>)
-    }
+    },
+    15: () => {
+        return (<>
+            <img src={margotUrl} />
+            <div>Elle ? C'est juste Margot</div>
+            <div>Pourquoi elle fait cette là ?</div>
+            <div>Elle vient juste de me voir (ou de voir un homme je sais pas)</div>
+        </>)
+    },
+    
 
 
 }
