@@ -13,6 +13,7 @@ import pleaseUrl from './assets/please.png'
 import tarotUrl from './assets/tarot.png'
 import acabUrl from './assets/acab.jpg'
 import margotUrl from './assets/margot.webp'
+import plastikUrl from './assets/plastik_fou.jpg'
 
 import './Card.css'
 
@@ -198,7 +199,16 @@ const days: Record<number, Function> = {
                 referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
         </>)
-    }
+    },
+    17: () => {
+        return (<>
+            <div>Ma cuisine préférée :</div>
+            <br></br>
+            <br></br>
+            <img src={plastikUrl}></img>
+
+        </>)
+    },
     
 
 
