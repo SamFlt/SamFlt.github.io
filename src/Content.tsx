@@ -206,9 +206,23 @@ const days: Record<number, Function> = {
             <br></br>
             <br></br>
             <img src={plastikUrl}></img>
-
         </>)
     },
+    18: () => {
+        return (<>
+            <div>
+                Pour ce 18ème jour, je te laisse admirer les éclairs.
+            </div>
+            <div>
+                Quand on s'est fait révéillés par le tonerre <a href="https://actu.fr/bretagne/rennes_35238/plus-de-500-eclairs-l-ille-et-vilaine-une-nouvelle-fois-placee-en-vigilance-orages_63191570.html">cette nuit</a>, c'était vraiment magique. Toi dans mes bras = 😍.
+            </div>
+            <br></br>
+            <br></br>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_jr2RzqVtsg?si=EQRrat0M8fV8ABaN"
+                title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        </>)
+    }
     
 
 
