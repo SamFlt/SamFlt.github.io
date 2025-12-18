@@ -14,6 +14,8 @@ import tarotUrl from './assets/tarot.png'
 import acabUrl from './assets/acab.jpg'
 import margotUrl from './assets/margot.webp'
 import plastikUrl from './assets/plastik_fou.jpg'
+import nouvelleUrl from './assets/nouvelle_ecole.jpg'
+
 
 import './Card.css'
 
@@ -222,9 +224,20 @@ const days: Record<number, Function> = {
             <iframe width="560" height="315" src="https://www.youtube.com/embed/_jr2RzqVtsg?si=EQRrat0M8fV8ABaN"
                 title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </>)
+    },
+    19: () => {
+        return (<>
+            <div>
+                Ca écrit mieux que moi :
+            </div>
+            <img src={nouvelleUrl}></img>
+            <br></br>
+            <br></br>
+            <iframe data-testid="embed-iframe"
+             src="https://open.spotify.com/embed/track/7jEFvAE6hVnbwxw86bNdDe?utm_source=generator" 
+             width="100%" height="352" allowFullScreen={false} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </>)
     }
-    
-
 
 }
 
