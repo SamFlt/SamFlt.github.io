@@ -15,6 +15,7 @@ import acabUrl from './assets/acab.jpg'
 import margotUrl from './assets/margot.webp'
 import plastikUrl from './assets/plastik_fou.jpg'
 import nouvelleUrl from './assets/nouvelle_ecole.jpg'
+import bridgertonUrl from './assets/bridgerton.webp'
 
 
 import './Card.css'
@@ -237,7 +238,26 @@ const days: Record<number, Function> = {
              src="https://open.spotify.com/embed/track/7jEFvAE6hVnbwxw86bNdDe?utm_source=generator" 
              width="100%" height="352" allowFullScreen={false} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </>)
-    }
+    },
+    20: () => {
+        return (<>
+            <div>Coucou ma petite lady Whistledown !</div>
+            <br></br>
+            <br></br>
+            <img src={bridgertonUrl}></img>
+        </>)
+    },
+    
+    21: () => {
+        return (<>
+            <div>
+            <br></br>
+            <a href="https://www.instagram.com/reel/C9xiKuvNWkd/">En cherchant Sylvie, je suis tombé sur un de ses dates</a>
+            <br/>
+            </div>
+        </>)
+    }       
+        
 
 }
 
