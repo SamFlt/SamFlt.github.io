@@ -16,6 +16,7 @@ import margotUrl from './assets/margot.webp'
 import plastikUrl from './assets/plastik_fou.jpg'
 import nouvelleUrl from './assets/nouvelle_ecole.jpg'
 import bridgertonUrl from './assets/bridgerton.webp'
+import halloweenUrl from './assets/halloween.jpg'
 
 
 import './Card.css'
@@ -256,7 +257,38 @@ const days: Record<number, Function> = {
             <br/>
             </div>
         </>)
-    }       
+    },
+    22: () => {
+        return (<>
+            <div>Trop belle cara mia 🤩🤩🤩🤩🤩</div>
+            <br></br>
+            <br></br>
+            <img src={halloweenUrl}></img>
+        </>)
+    },
+    23: () => {
+        return (<>
+            <div>Aujourd'hui, très simple : </div>
+            <div>Un des chiffres de la date indique combien je t'aime...</div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <h1>TROUA</h1>
+        </>)
+    }   
         
 
 }
