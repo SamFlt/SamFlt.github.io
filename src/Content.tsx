@@ -318,7 +318,7 @@ const days: Record<number, Function> = {
             </p>
 
             <p className="left">
-                Dehors la Sibérie <br/>
+                Dehors la paleur de la Sibérie <br/>
                 Dedans la chaleur et les rêveries<br/>
                 Dehors le blizzard et une odeur de fin <br/>
                 Dedans les verrines et l'amour sous le sapin <br/>
