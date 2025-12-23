@@ -288,7 +288,47 @@ const days: Record<number, Function> = {
             <br></br>
             <h1>TROUA</h1>
         </>)
-    }   
+    },
+    24: () => {
+        return (<>
+            <div className="poemContainer">
+            <p className="left">
+                Pour ce révéillon, c'est le retour de mon imparfaite poésie<br/>
+                De mots un bouillon, ton regard quête le sens dans cette hérésie<br/>
+                Mais dans cette période de fête et de frénésie, de changement et d'incertitude<br/>
+                Tu es constamment dans ma tête et mon désir, je t'aime tendrement, avec ou sans turpitude<br/>
+                Alors d'une plume virtuelle je me saisi, même si ca n'est pas savant ou avec aptitude<br/>
+            </p>
+            
+            <p className="left">
+                C'est sous la neige que le Père Nöel va passer par la cheminée <br/>
+                Noël est dans le futur, mon cadeau 5 mois passé a été acheminé <br/>
+                5 mois que tu fais mon bonheur, tu es mon Essentiel <br/>
+                5 mois que tu assainis mon humeur, me délivres du fiel <br/>
+                5 mois que tu es ma couleur, que je vis au pied de l'arc-en-ciel <br/>
+            </p>
+
+            <p className="left">
+                Dans ton appartement bigarré, on s'est découvert <br/>
+                On s'est tant marré puisque t'es si barrée <br/>
+                Comme une pensée mon coeur a éclos, s'est ouvert <br/>
+                Je ne suis que désolé que mon <em className='red'>haleine</em> te rende tout vert <br/>
+                Tu me fais tant rire, alors s'il te plaît, n'arrête pas tes simagrées <br/>
+                Et <em className="red">puis</em> je ferai tout pour, tes peines garder l'é<em className="red">troit</em>, emprisonnées <br/>
+            </p>
+
+            <p className="left">
+                Dehors la Sibérie <br/>
+                Dedans la chaleur et les rêveries<br/>
+                Dehors le blizzard et une odeur de fin <br/>
+                Dedans les verrines et l'amour sous le sapin <br/>
+                J'espère qu'un jour de la chance tu auras<br/>
+                Pour la reine Olivia, <em className="red">Houra</em><br/>
+            </p>
+            </div>
+        </>)
+
+    }
         
 
 }

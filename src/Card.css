@@ -63,6 +63,14 @@
   border-radius: 50%;
 }
 
+.red {
+  color: #920c0c;
+}
+
+.left {
+  text-align: left;
+}
+
 .img-wrapper {
   position: relative;
   width: 100%;
